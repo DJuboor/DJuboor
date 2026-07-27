@@ -133,20 +133,13 @@ def aquarium(frame: int) -> list[list[Seg]]:
     for x in range(ART_W):
         put(x, ART_H - 1, bed[x % len(bed)], "art")
 
+    # Straight aligned stems; the whole stalk drifts ±1 column day to day.
     for x0, top, ph in [(7, 17, 0.0), (19, 13, 2.1), (32, 19, 4.2)]:
-        sway = ph + frame * 0.35
+        x = x0 + round(math.sin(frame * 0.35 + ph))
         for y in range(top, ART_H - 1):
-            x = x0 + round(1.4 * math.sin((ART_H - y) / 3.5 + sway))
             put(x, y, "|", "kelp")
             if y > top:
-                if y % 2 == 0:
-                    put(x - 1, y, "\\", "kelp")
-                    if y % 4 == 0:
-                        put(x - 2, y, ")", "kelp")
-                else:
-                    put(x + 1, y, "/", "kelp")
-                    if y % 4 == 1:
-                        put(x + 2, y, "(", "kelp")
+                put(x - 1, y, "\\", "kelp") if y % 2 == 0 else put(x + 1, y, "/", "kelp")
 
     # (sprite, row, speed cols/day, phase, class); negative speed swims left.
     # Big fish keep to open water above the kelp; small ones weave the forest
@@ -168,8 +161,13 @@ def aquarium(frame: int) -> list[list[Seg]]:
             for i in cells:
                 put(x0 + i, row, sprite[i], cls)
 
+    # Bubbler column at the far right, streaming up past the kelp line.
+    for k in range(6):
+        y = (ART_H - 2) - ((frame * 2 + k * 5) % (ART_H - 3))
+        put(38 + (y + frame) % 2, y, "oO°"[k % 3], "bub")
+
     rng = random.Random(frame)
-    for _ in range(12):
+    for _ in range(8):
         y = 1 + int(abs(rng.gauss(0, ART_H * 0.3)))
         put(rng.randrange(1, ART_W - 1), y, rng.choice("°°oo.O"), "bub")
 
@@ -238,7 +236,7 @@ def build_lines(stats: dict, adds: int, dels: int) -> list[list[Seg]]:
         [],
         kv("Hobbies.Software", "Automation, DocVQA, Deep Learning"),
         kv("Hobbies.Hardware", "DGX Spark, Homelab, Embedded"),
-        kv("Hobbies.Others", "PingPong, Scuba, Jazz"),
+        kv("Hobbies.Others", "PingPong, SCUBA, Jazz"),
         [],
         rule("Contact", section=True),
         kv("Portfolio", "davidj.today"),
