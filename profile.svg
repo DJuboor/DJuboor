@@ -52,14 +52,14 @@
 <text class="dots" x="415.2" y="80" xml:space="preserve" textLength="266.9" lengthAdjust="spacingAndGlyphs"> ................................ </text>
 <text class="val" x="682.1" y="80" xml:space="preserve" textLength="188.4" lengthAdjust="spacingAndGlyphs">macOS / Ubuntu (aarch64)</text>
 <text class="key" x="391.7" y="99" xml:space="preserve" textLength="39.2" lengthAdjust="spacingAndGlyphs">Host:</text>
-<text class="dots" x="430.9" y="99" xml:space="preserve" textLength="251.2" lengthAdjust="spacingAndGlyphs"> .............................. </text>
-<text class="val" x="682.1" y="99" xml:space="preserve" textLength="188.4" lengthAdjust="spacingAndGlyphs">Walt Disney Imagineering</text>
+<text class="dots" x="430.9" y="99" xml:space="preserve" textLength="243.3" lengthAdjust="spacingAndGlyphs"> ............................. </text>
+<text class="val" x="674.3" y="99" xml:space="preserve" textLength="196.2" lengthAdjust="spacingAndGlyphs">Princ. MLE @ Imagineering</text>
 <text class="key" x="391.7" y="118" xml:space="preserve" textLength="54.9" lengthAdjust="spacingAndGlyphs">Kernel:</text>
 <text class="dots" x="446.6" y="118" xml:space="preserve" textLength="211.9" lengthAdjust="spacingAndGlyphs"> ......................... </text>
 <text class="val" x="658.6" y="118" xml:space="preserve" textLength="211.9" lengthAdjust="spacingAndGlyphs">ChemE (Drexel) → Applied ML</text>
 <text class="key" x="391.7" y="137" xml:space="preserve" textLength="54.9" lengthAdjust="spacingAndGlyphs">Uptime:</text>
-<text class="dots" x="446.6" y="137" xml:space="preserve" textLength="243.3" lengthAdjust="spacingAndGlyphs"> ............................. </text>
-<text class="val" x="690.0" y="137" xml:space="preserve" textLength="180.5" lengthAdjust="spacingAndGlyphs">15+ years in production</text>
+<text class="dots" x="446.6" y="137" xml:space="preserve" textLength="211.9" lengthAdjust="spacingAndGlyphs"> ......................... </text>
+<text class="val" x="658.6" y="137" xml:space="preserve" textLength="211.9" lengthAdjust="spacingAndGlyphs">33 years, 7 months, 22 days</text>
 <text class="key" x="391.7" y="156" xml:space="preserve" textLength="47.1" lengthAdjust="spacingAndGlyphs">Shell:</text>
 <text class="dots" x="438.8" y="156" xml:space="preserve" textLength="306.1" lengthAdjust="spacingAndGlyphs"> ..................................... </text>
 <text class="val" x="744.9" y="156" xml:space="preserve" textLength="125.6" lengthAdjust="spacingAndGlyphs">Python · PyTorch</text>

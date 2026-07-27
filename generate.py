@@ -11,7 +11,7 @@ from datetime import date
 from pathlib import Path
 
 LOGIN = "DJuboor"
-CAREER_START = date(2011, 1, 1)
+BORN = date(1992, 12, 5)
 FONT = 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace'
 CHAR_W, LINE_H, FONT_SIZE = 7.85, 19, 13
 PAD, ART_INFO_GAP = 28, 34
@@ -55,15 +55,19 @@ def kv(key: str, value: str) -> tuple[str, str, str]:
 
 def build_lines(stats: dict[str, int]) -> list[tuple[str, ...]]:
     today = date.today()
-    years = (today - CAREER_START).days // 365
+    years = today.year - BORN.year - ((today.month, today.day) < (BORN.month, BORN.day))
+    months = (today.month - BORN.month - (today.day < BORN.day)) % 12
+    anchor_month = today.month - (today.day < BORN.day)
+    anchor = date(today.year - (anchor_month < 1), (anchor_month - 1) % 12 + 1, BORN.day)
+    days = (today - anchor).days
     year_pct = today.timetuple().tm_yday * 100 // 365
     return [
         ("davidj@imagineering", "", ""),
         ("─" * INFO_WIDTH, "", ""),
         kv("OS", "macOS / Ubuntu (aarch64)"),
-        kv("Host", "Walt Disney Imagineering"),
+        kv("Host", "Princ. MLE @ Imagineering"),
         kv("Kernel", "ChemE (Drexel) → Applied ML"),
-        kv("Uptime", f"{years}+ years in production"),
+        kv("Uptime", f"{years} years, {months} months, {days} days"),
         kv("Shell", "Python · PyTorch"),
         ("", "", ""),
         kv("Focus.Current", "LLM agents, multimodal doc intel"),
