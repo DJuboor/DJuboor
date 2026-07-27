@@ -133,7 +133,7 @@ def aquarium(frame: int) -> list[list[Seg]]:
     for x in range(ART_W):
         put(x, ART_H - 1, bed[x % len(bed)], "art")
 
-    for x0, top, ph in [(7, 7, 0.0), (19, 3, 2.1), (32, 11, 4.2)]:
+    for x0, top, ph in [(7, 17, 0.0), (19, 13, 2.1), (32, 19, 4.2)]:
         sway = ph + frame * 0.35
         for y in range(top, ART_H - 1):
             x = x0 + round(1.4 * math.sin((ART_H - y) / 3.5 + sway))
@@ -229,11 +229,11 @@ def build_lines(stats: dict, adds: int, dels: int) -> list[list[Seg]]:
         [],
         kv("Languages.AI", "Agents, Harnesses, RAG"),
         kv("Languages.Programming", "Python, TypeScript, Bash, C++"),
-        kv("Languages.Human", "English, Spanish (in progress)"),
+        kv("Languages.Human", "English, Spanish"),
         [],
-        kv("Hobbies.Software", "homelab inference, agent harnesses"),
-        kv("Hobbies.Hardware", "DGX Spark, Pi cluster, OPNsense"),
-        kv("Hobbies.Others", "scuba diving, jazz theory"),
+        kv("Hobbies.Software", "Automation, DocVQA, Deep Learning"),
+        kv("Hobbies.Hardware", "DGX Spark, Homelab, Embedded"),
+        kv("Hobbies.Others", "PingPong, Scuba, Jazz"),
         [],
         rule("Contact", section=True),
         kv("Portfolio", "davidj.today"),
