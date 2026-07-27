@@ -164,12 +164,11 @@ def aquarium(frame: int) -> list[list[Seg]]:
     # Tiny diver at the bottom right; his raised arm alternates daily (waving),
     # and the bubble column above him is his regulator stream.
     put(37, 24, "o", "diver")
-    if frame % 2 == 0:
-        put(36, 24, "\\", "diver")
-    else:
-        put(38, 24, "/", "diver")
     put(37, 25, "|", "diver")
-    put(38, 25, "=", "diver")  # tank
+    if frame % 2 == 0:
+        put(36, 25, "\\", "diver")  # waving arm, alternates side daily
+    else:
+        put(38, 25, "/", "diver")
     put(36, 26, "/", "diver")
     put(38, 26, "\\", "diver")
 
