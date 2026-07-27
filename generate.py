@@ -148,23 +148,28 @@ def aquarium(frame: int) -> list[list[Seg]]:
                     if y % 4 == 1:
                         put(x + 2, y, "(", "kelp")
 
-    # (sprite, row, speed cols/day, phase, class); negative speed swims left
+    # (sprite, row, speed cols/day, phase, class); negative speed swims left.
+    # Big fish keep to open water above the kelp; small ones weave the forest
+    # and skip days their path is blocked (hiding in the kelp).
     fish = [
         ("><(((°>", 4, 3, 5, "fish1"),
         ("<°)))><", 9, -2, 21, "fish2"),
-        ("><>", 14, 4, 12, "fish3"),
+        ("><}}°>", 11, 2, 0, "fish2"),
         ("<><", 6, -3, 30, "fish1"),
-        ("><}}°>", 20, 2, 0, "fish2"),
+        ("><>", 16, 4, 12, "fish3"),
+        ("<><", 21, -2, 7, "fish3"),
     ]
     for sprite, row, speed, phase, cls in fish:
         span = ART_W + len(sprite) + 10  # off-screen gap before wrapping
         pos = (phase + speed * frame) % span
         x0 = pos - len(sprite) if speed > 0 else ART_W - pos
-        for i, c in enumerate(sprite):
-            put(x0 + i, row, c, cls, over=True)  # fish swim in front of kelp
+        cells = [i for i in range(len(sprite)) if 0 <= x0 + i < ART_W]
+        if all(grid[row][x0 + i][0] == " " for i in cells):
+            for i in cells:
+                put(x0 + i, row, sprite[i], cls)
 
     rng = random.Random(frame)
-    for _ in range(24):
+    for _ in range(12):
         y = 1 + int(abs(rng.gauss(0, ART_H * 0.3)))
         put(rng.randrange(1, ART_W - 1), y, rng.choice("°°oo.O"), "bub")
 
@@ -224,10 +229,10 @@ def build_lines(stats: dict, adds: int, dels: int) -> list[list[Seg]]:
         kv("OS", "macOS / Ubuntu (aarch64)"),
         kv("Uptime", f"{years} years, {months} months, {days} days"),
         kv("Host", "Princ. MLE @ Imagineering"),
-        kv("Kernel", "ChemE (Drexel) → Applied ML"),
-        kv("IDE", "ST4, Vim"),
+        kv("Kernel", "ChemE → Applied ML"),
+        kv("IDE", "Sublime, Vim"),
         [],
-        kv("Languages.AI", "Agents, Harnesses, RAG"),
+        kv("Languages.AI", "Agents, Harnesses, RAG, MCP"),
         kv("Languages.Programming", "Python, TypeScript, Bash, C++"),
         kv("Languages.Human", "English, Spanish"),
         [],
