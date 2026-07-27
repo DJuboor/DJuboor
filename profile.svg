@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="906" height="607" viewBox="0 0 906 607" role="img" aria-label="davidj profile">
+<style>
+    text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; font-size: 13px; white-space: pre; }
+    .bg { fill: #f6f8fa; stroke: #d0d7de; }
+    .art { fill: #1a7f37; }
+    .title { fill: #0969da; font-weight: 600; }
+    .key { fill: #953800; }
+    .dots { fill: #8c959f; }
+    .val { fill: #24292f; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #161b22; stroke: #30363d; }
+      .art { fill: #3fb950; }
+      .title { fill: #58a6ff; }
+      .key { fill: #ffa657; }
+      .dots { fill: #484f58; }
+      .val { fill: #c9d1d9; }
+    }
+  </style>
+<rect class="bg" x="0.5" y="0.5" width="905" height="606" rx="8"/>
+<text class="art" x="28.0" y="42" xml:space="preserve" textLength="243.3" lengthAdjust="spacingAndGlyphs">:--=====++++++++++++++++++++++=</text>
+<text class="art" x="28.0" y="61" xml:space="preserve" textLength="251.2" lengthAdjust="spacingAndGlyphs">:==+++++********####*####*****+.</text>
+<text class="art" x="28.0" y="80" xml:space="preserve" textLength="251.2" lengthAdjust="spacingAndGlyphs">-=:+***########**+--:---+**#**+.</text>
+<text class="art" x="28.0" y="99" xml:space="preserve" textLength="243.3" lengthAdjust="spacingAndGlyphs">-=.=+**##*===:.           .-+:.</text>
+<text class="art" x="28.0" y="118" xml:space="preserve" textLength="282.6" lengthAdjust="spacingAndGlyphs">-+:+*++#%#.     .          -*=:.....</text>
+<text class="art" x="28.0" y="137" xml:space="preserve" textLength="282.6" lengthAdjust="spacingAndGlyphs">-+:++=-#%#.                .-+*.....</text>
+<text class="art" x="28.0" y="156" xml:space="preserve" textLength="282.6" lengthAdjust="spacingAndGlyphs">-+:=-=-#%#.    .------::..  .-+.....</text>
+<text class="art" x="28.0" y="175" xml:space="preserve" textLength="306.1" lengthAdjust="spacingAndGlyphs">-+:=-*=+*#.  :=++++++==--::..==..... ..</text>
+<text class="art" x="28.0" y="194" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">:+:++*++-+  :++++++++==--::..++...........</text>
+<text class="art" x="28.0" y="213" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">:+:=*+==..  -====++++=::.....-+...........</text>
+<text class="art" x="28.0" y="232" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">:+++=**- . .----:-::.....:..:*+.....  ....</text>
+<text class="art" x="28.0" y="251" xml:space="preserve" textLength="282.6" lengthAdjust="spacingAndGlyphs">:+**+=#- .  -==-:=-=. .-:::.:*-  ...</text>
+<text class="art" x="28.0" y="270" xml:space="preserve" textLength="282.6" lengthAdjust="spacingAndGlyphs">:=+=+-::    -====-+=:..:--:.=%-  ...</text>
+<text class="art" x="28.0" y="289" xml:space="preserve" textLength="274.8" lengthAdjust="spacingAndGlyphs">:---::---===++===++=:..:---:=%- ...</text>
+<text class="art" x="28.0" y="308" xml:space="preserve" textLength="251.2" lengthAdjust="spacingAndGlyphs">-=-: .+**#%%*===++==-:...:-:-*+.</text>
+<text class="art" x="28.0" y="327" xml:space="preserve" textLength="314.0" lengthAdjust="spacingAndGlyphs">:=:. :+**#%%#==+++==--:::-::-*+       ..</text>
+<text class="art" x="28.0" y="346" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">-::::-+**#%%%*===++==--::.:-+#=  :.  .++:.</text>
+<text class="art" x="28.0" y="365" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">::..::=**#%%%%*------:...:-=+%#-=%+-+++=::</text>
+<text class="art" x="28.0" y="384" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">.:.:-:=*####*+-:=--::..::::-:+@@@%@*=---::</text>
+<text class="art" x="28.0" y="403" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">:-=++==#%#+=:-- -====-:::::..=%%#%%%%*++-:</text>
+<text class="art" x="28.0" y="422" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">:-=**#+*#=-=:== .-==--::::. :=##*%%%#%%#+=</text>
+<text class="art" x="28.0" y="441" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">==+**+=+*--=-==: .:-::::::.:: =#**#%%#+==*</text>
+<text class="art" x="28.0" y="460" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">=++++=-++=:--==.. .:::---:--: .=+***+--=++</text>
+<text class="art" x="28.0" y="479" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">-=====-++=::--=:--..:-----=-..::---+::-=--</text>
+<text class="art" x="28.0" y="498" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">--==-=====-.---=---:.:---=-..:::-:--.:-:::</text>
+<text class="art" x="28.0" y="517" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">::-----=-==:-====--=-.---:.:::--::--.:::::</text>
+<text class="art" x="28.0" y="536" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">:::...:---=::====----.:-:..::---:--:.:::..</text>
+<text class="art" x="28.0" y="555" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">:::....:::-:.-==----- .:..:::::..:: ..::::</text>
+<text class="art" x="28.0" y="574" xml:space="preserve" textLength="329.7" lengthAdjust="spacingAndGlyphs">...... ..:::..:::---: ...::::...:.. ......</text>
+<text class="title" x="391.7" y="42" xml:space="preserve" textLength="149.2" lengthAdjust="spacingAndGlyphs">davidj@imagineering</text>
+<text class="dots" x="391.7" y="61" xml:space="preserve" textLength="486.7" lengthAdjust="spacingAndGlyphs">──────────────────────────────────────────────────────────────</text>
+<text class="key" x="391.7" y="80" xml:space="preserve" textLength="23.5" lengthAdjust="spacingAndGlyphs">OS:</text>
+<text class="dots" x="415.2" y="80" xml:space="preserve" textLength="266.9" lengthAdjust="spacingAndGlyphs"> ................................ </text>
+<text class="val" x="682.1" y="80" xml:space="preserve" textLength="188.4" lengthAdjust="spacingAndGlyphs">macOS / Ubuntu (aarch64)</text>
+<text class="key" x="391.7" y="99" xml:space="preserve" textLength="39.2" lengthAdjust="spacingAndGlyphs">Host:</text>
+<text class="dots" x="430.9" y="99" xml:space="preserve" textLength="251.2" lengthAdjust="spacingAndGlyphs"> .............................. </text>
+<text class="val" x="682.1" y="99" xml:space="preserve" textLength="188.4" lengthAdjust="spacingAndGlyphs">Walt Disney Imagineering</text>
+<text class="key" x="391.7" y="118" xml:space="preserve" textLength="54.9" lengthAdjust="spacingAndGlyphs">Kernel:</text>
+<text class="dots" x="446.6" y="118" xml:space="preserve" textLength="211.9" lengthAdjust="spacingAndGlyphs"> ......................... </text>
+<text class="val" x="658.6" y="118" xml:space="preserve" textLength="211.9" lengthAdjust="spacingAndGlyphs">ChemE (Drexel) → Applied ML</text>
+<text class="key" x="391.7" y="137" xml:space="preserve" textLength="54.9" lengthAdjust="spacingAndGlyphs">Uptime:</text>
+<text class="dots" x="446.6" y="137" xml:space="preserve" textLength="243.3" lengthAdjust="spacingAndGlyphs"> ............................. </text>
+<text class="val" x="690.0" y="137" xml:space="preserve" textLength="180.5" lengthAdjust="spacingAndGlyphs">15+ years in production</text>
+<text class="key" x="391.7" y="156" xml:space="preserve" textLength="47.1" lengthAdjust="spacingAndGlyphs">Shell:</text>
+<text class="dots" x="438.8" y="156" xml:space="preserve" textLength="306.1" lengthAdjust="spacingAndGlyphs"> ..................................... </text>
+<text class="val" x="744.9" y="156" xml:space="preserve" textLength="125.6" lengthAdjust="spacingAndGlyphs">Python · PyTorch</text>
+<text class="key" x="391.7" y="194" xml:space="preserve" textLength="109.9" lengthAdjust="spacingAndGlyphs">Focus.Current:</text>
+<text class="dots" x="501.6" y="194" xml:space="preserve" textLength="117.8" lengthAdjust="spacingAndGlyphs"> ............. </text>
+<text class="val" x="619.3" y="194" xml:space="preserve" textLength="251.2" lengthAdjust="spacingAndGlyphs">LLM agents, multimodal doc intel</text>
+<text class="key" x="391.7" y="213" xml:space="preserve" textLength="102.0" lengthAdjust="spacingAndGlyphs">Focus.Vision:</text>
+<text class="dots" x="493.8" y="213" xml:space="preserve" textLength="102.0" lengthAdjust="spacingAndGlyphs"> ........... </text>
+<text class="val" x="595.8" y="213" xml:space="preserve" textLength="274.8" lengthAdjust="spacingAndGlyphs">CV, OCR, style transfer, relighting</text>
+<text class="key" x="391.7" y="232" xml:space="preserve" textLength="117.8" lengthAdjust="spacingAndGlyphs">Focus.Robotics:</text>
+<text class="dots" x="509.4" y="232" xml:space="preserve" textLength="196.2" lengthAdjust="spacingAndGlyphs"> ....................... </text>
+<text class="val" x="705.7" y="232" xml:space="preserve" textLength="164.8" lengthAdjust="spacingAndGlyphs">animatronics (45-DOF)</text>
+<text class="key" x="391.7" y="251" xml:space="preserve" textLength="47.1" lengthAdjust="spacingAndGlyphs">Infra:</text>
+<text class="dots" x="438.8" y="251" xml:space="preserve" textLength="211.9" lengthAdjust="spacingAndGlyphs"> ......................... </text>
+<text class="val" x="650.8" y="251" xml:space="preserve" textLength="219.8" lengthAdjust="spacingAndGlyphs">vLLM · LiteLLM · self-hosted</text>
+<text class="key" x="391.7" y="289" xml:space="preserve" textLength="62.8" lengthAdjust="spacingAndGlyphs">Patents:</text>
+<text class="dots" x="454.5" y="289" xml:space="preserve" textLength="314.0" lengthAdjust="spacingAndGlyphs"> ...................................... </text>
+<text class="val" x="768.5" y="289" xml:space="preserve" textLength="102.0" lengthAdjust="spacingAndGlyphs">9 (5 granted)</text>
+<text class="key" x="391.7" y="308" xml:space="preserve" textLength="54.9" lengthAdjust="spacingAndGlyphs">Papers:</text>
+<text class="dots" x="446.6" y="308" xml:space="preserve" textLength="196.2" lengthAdjust="spacingAndGlyphs"> ....................... </text>
+<text class="val" x="642.9" y="308" xml:space="preserve" textLength="227.6" lengthAdjust="spacingAndGlyphs">3 (ACS OPRD, VQA, embeddings)</text>
+<text class="key" x="391.7" y="327" xml:space="preserve" textLength="47.1" lengthAdjust="spacingAndGlyphs">Ships:</text>
+<text class="dots" x="438.8" y="327" xml:space="preserve" textLength="172.7" lengthAdjust="spacingAndGlyphs"> .................... </text>
+<text class="val" x="611.5" y="327" xml:space="preserve" textLength="259.1" lengthAdjust="spacingAndGlyphs">JARVIS · PhotoPass · OpenAnnotate</text>
+<text class="key" x="391.7" y="346" xml:space="preserve" textLength="54.9" lengthAdjust="spacingAndGlyphs">Gaming:</text>
+<text class="dots" x="446.6" y="346" xml:space="preserve" textLength="345.4" lengthAdjust="spacingAndGlyphs"> .......................................... </text>
+<text class="val" x="792.0" y="346" xml:space="preserve" textLength="78.5" lengthAdjust="spacingAndGlyphs">Mr.Bubbles</text>
+<text class="key" x="391.7" y="384" xml:space="preserve" textLength="102.0" lengthAdjust="spacingAndGlyphs">Repos.Public:</text>
+<text class="dots" x="493.8" y="384" xml:space="preserve" textLength="368.9" lengthAdjust="spacingAndGlyphs"> ............................................. </text>
+<text class="val" x="862.7" y="384" xml:space="preserve" textLength="7.8" lengthAdjust="spacingAndGlyphs">5</text>
+<text class="key" x="391.7" y="403" xml:space="preserve" textLength="47.1" lengthAdjust="spacingAndGlyphs">Stars:</text>
+<text class="dots" x="438.8" y="403" xml:space="preserve" textLength="423.9" lengthAdjust="spacingAndGlyphs"> .................................................... </text>
+<text class="val" x="862.7" y="403" xml:space="preserve" textLength="7.8" lengthAdjust="spacingAndGlyphs">2</text>
+<text class="key" x="391.7" y="422" xml:space="preserve" textLength="78.5" lengthAdjust="spacingAndGlyphs">Followers:</text>
+<text class="dots" x="470.2" y="422" xml:space="preserve" textLength="392.5" lengthAdjust="spacingAndGlyphs"> ................................................ </text>
+<text class="val" x="862.7" y="422" xml:space="preserve" textLength="7.8" lengthAdjust="spacingAndGlyphs">8</text>
+<text class="key" x="391.7" y="460" xml:space="preserve" textLength="31.4" lengthAdjust="spacingAndGlyphs">Web:</text>
+<text class="dots" x="423.1" y="460" xml:space="preserve" textLength="353.2" lengthAdjust="spacingAndGlyphs"> ........................................... </text>
+<text class="val" x="776.3" y="460" xml:space="preserve" textLength="94.2" lengthAdjust="spacingAndGlyphs">davidj.today</text>
+<text class="key" x="391.7" y="479" xml:space="preserve" textLength="54.9" lengthAdjust="spacingAndGlyphs">GitHub:</text>
+<text class="dots" x="446.6" y="479" xml:space="preserve" textLength="282.6" lengthAdjust="spacingAndGlyphs"> .................................. </text>
+<text class="val" x="729.2" y="479" xml:space="preserve" textLength="141.3" lengthAdjust="spacingAndGlyphs">github.com/DJuboor</text>
+<text class="key" x="391.7" y="498" xml:space="preserve" textLength="70.6" lengthAdjust="spacingAndGlyphs">LinkedIn:</text>
+<text class="dots" x="462.3" y="498" xml:space="preserve" textLength="290.4" lengthAdjust="spacingAndGlyphs"> ................................... </text>
+<text class="val" x="752.8" y="498" xml:space="preserve" textLength="117.8" lengthAdjust="spacingAndGlyphs">in/davidnjuboor</text>
+<text class="key" x="391.7" y="536" xml:space="preserve" textLength="54.9" lengthAdjust="spacingAndGlyphs">Status:</text>
+<text class="dots" x="446.6" y="536" xml:space="preserve" textLength="204.1" lengthAdjust="spacingAndGlyphs"> ........................ </text>
+<text class="val" x="650.8" y="536" xml:space="preserve" textLength="219.8" lengthAdjust="spacingAndGlyphs">LOADING.. [███████░░░░░] 56%</text>
+</svg>
