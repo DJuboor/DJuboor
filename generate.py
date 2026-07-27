@@ -34,7 +34,7 @@ THEME = {
     "bg": "#002b36", "border": "#073642",
     "title": "#93a1a1", "key": "#cb4b16", "val": "#268bd2", "dots": "#586e75",
     "good": "#859900", "bad": "#dc322f",
-    "kelp": "#859900", "bub": "#2aa198", "water": "#2aa198",
+    "kelp": "#859900", "bub": "#2aa198", "water": "#2aa198", "diver": "#93a1a1",
     "fish1": "#b58900", "fish2": "#d33682", "fish3": "#6c71c4",
 }
 
@@ -161,9 +161,21 @@ def aquarium(frame: int) -> list[list[Seg]]:
             for i in cells:
                 put(x0 + i, row, sprite[i], cls)
 
-    # Bubbler column at the far right, streaming up past the kelp line.
+    # Tiny diver at the bottom right; his raised arm alternates daily (waving),
+    # and the bubble column above him is his regulator stream.
+    put(37, 24, "o", "diver")
+    if frame % 2 == 0:
+        put(36, 24, "\\", "diver")
+    else:
+        put(38, 24, "/", "diver")
+    put(37, 25, "|", "diver")
+    put(38, 25, "=", "diver")  # tank
+    put(36, 26, "/", "diver")
+    put(38, 26, "\\", "diver")
+
+    # Regulator bubbles streaming up from the diver, right of the kelp.
     for k in range(6):
-        y = (ART_H - 2) - ((frame * 2 + k * 5) % (ART_H - 3))
+        y = 22 - ((frame * 2 + k * 5) % 21)
         put(38 + (y + frame) % 2, y, "oO°"[k % 3], "bub")
 
     rng = random.Random(frame)
