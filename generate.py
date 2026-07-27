@@ -34,7 +34,7 @@ def github_stats() -> dict[str, int]:
     query($login: String!) {
       user(login: $login) {
         followers { totalCount }
-        repositories(first: 100, ownerAffiliations: OWNER, privacy: PUBLIC) {
+        repositories(first: 100, ownerAffiliations: OWNER) {
           totalCount
           nodes { stargazerCount }
         }
@@ -71,10 +71,10 @@ def pair(k1: str, v1: str, k2: str, v2: str) -> list[Seg]:
     return left + [("dots", " | ")] + right
 
 
-def rule(title: str, cls: str) -> list[Seg]:
-    prefix = "" if cls == "title" else "- "
+def rule(title: str, section: bool = False) -> list[Seg]:
+    prefix = "- " if section else ""
     bar = "─" * (INFO_WIDTH - len(prefix) - len(title) - 4)
-    return [("dots", prefix), (cls, title), ("dots", f" {bar}-·-")]
+    return [("dots", prefix), ("title", title), ("dots", f" {bar}-·-")]
 
 
 def build_lines(stats: dict[str, int]) -> list[list[Seg]]:
@@ -87,31 +87,28 @@ def build_lines(stats: dict[str, int]) -> list[list[Seg]]:
     year_pct = today.timetuple().tm_yday * 100 // 365
     bar = ("█" * (year_pct // 8)).ljust(12, "░")
     return [
-        rule("davidj@imagineering", "title"),
+        rule("davidj@imagineering"),
         [],
         kv("OS", "macOS / Ubuntu (aarch64)"),
         kv("Uptime", f"{years} years, {months} months, {days} days"),
         kv("Host", "Princ. MLE @ Imagineering"),
         kv("Kernel", "ChemE (Drexel) → Applied ML"),
-        kv("Shell", "Python · PyTorch"),
-        kv("Packages", "9 patents (5 granted) · 3 papers"),
-        kv("Shipped", "JARVIS · PhotoPass · OpenAnnotate"),
+        kv("IDE", "ST4, Vim"),
         [],
-        kv("Languages.Programming", "Python, SQL, Bash"),
-        kv("Languages.Computer", "JSON, YAML, LaTeX, Markdown"),
-        kv("Languages.Real", "English, Spanish (in progress)"),
+        kv("Languages.AI", "Agents, Harnesses, RAG"),
+        kv("Languages.Programming", "Python, TypeScript, Bash, C++"),
+        kv("Languages.Human", "English, Spanish (in progress)"),
         [],
         kv("Hobbies.Software", "homelab inference, agent harnesses"),
         kv("Hobbies.Hardware", "DGX Spark, Pi cluster, OPNsense"),
         kv("Hobbies.Others", "scuba diving, jazz theory"),
         [],
-        rule("Contact", "key"),
-        kv("Web", "davidj.today"),
-        kv("GitHub", "github.com/DJuboor"),
+        rule("Contact", section=True),
+        kv("Portfolio", "davidj.today"),
         kv("LinkedIn", "in/davidnjuboor"),
-        kv("Gaming", "Mr.Bubbles"),
+        kv("Discord", "Mr.Bubbles"),
         [],
-        rule("GitHub Stats", "key"),
+        rule("GitHub Stats", section=True),
         pair("Repos", f"{stats['repos']} {{Contributed: {stats['contributed']}}}", "Stars", str(stats["stars"])),
         pair("Commits", f"{stats['commits']:,}", "Followers", str(stats["followers"])),
         [],
@@ -148,13 +145,13 @@ def render(art: list[str], lines: list[list[Seg]]) -> str:
         f'viewBox="0 0 {width} {height}" role="img" aria-label="davidj profile">',
         f"""<style>
     text {{ font-family: {FONT}; font-size: {FONT_SIZE}px; white-space: pre; }}
-    .bg {{ fill: #0d1117; stroke: #30363d; }}
+    .bg {{ fill: #0a0c10; stroke: #30363d; }}
     .art {{ fill: #3fb950; }}
     .bub {{ fill: #79c0ff; }}
-    .title {{ fill: #58a6ff; font-weight: 600; }}
-    .key {{ fill: #ffa657; }}
-    .dots {{ fill: #3d444d; }}
-    .val {{ fill: #e6edf3; }}
+    .title {{ fill: #e8e8e3; font-weight: 600; }}
+    .key {{ fill: #e5924a; }}
+    .dots {{ fill: #545d68; }}
+    .val {{ fill: #e6e4dd; }}
   </style>""",
         f'<rect class="bg" x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="8"/>',
     ]

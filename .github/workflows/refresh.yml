@@ -13,7 +13,9 @@ jobs:
       - name: Regenerate profile.svg
         run: python3 generate.py
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # PROFILE_TOKEN (a read-only PAT) lets the nightly count private
+          # repos; the default workflow token only sees this repository.
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
